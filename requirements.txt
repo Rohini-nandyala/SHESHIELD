@@ -1,0 +1,35 @@
+Project Name:
+SheShield – Women's Safety & Emergency Support System
+
+Software Requirements
+---------------------
+• Operating System: Windows 10/11, Linux, or macOS
+• Web Browser: Google Chrome, Microsoft Edge, Mozilla Firefox
+• Code Editor: Visual Studio Code
+• HTML5
+• CSS3
+• JavaScript (ES6)
+• Internet Connection (for Google Fonts & Font Awesome)
+
+Hardware Requirements
+---------------------
+• Processor: Intel Core i3 or above
+• RAM: Minimum 4 GB (8 GB Recommended)
+• Storage: 500 MB Free Space
+• Display Resolution: 1366 × 768 or higher
+
+External Libraries
+------------------
+• Google Fonts (Poppins)
+• Font Awesome Icons
+
+Project Files
+-------------
+index.html
+style.css
+script.js
+documentation.html
+documentation.css
+safe.jpg
+README.md
+requirements.txt
