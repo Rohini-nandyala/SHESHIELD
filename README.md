@@ -43,7 +43,11 @@ SheShield/
 ├── documentation.css
 ├── safe.jpg
 ├── README.md
-└── requirements.txt
+├── home.png
+├── emergency.png
+├──safety.png
+├── contact.png
+
 ```
 
 ---
