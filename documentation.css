@@ -1,0 +1,326 @@
+/* ==========================
+   GOOGLE RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#F8F2FF,#FFE8F3);
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(15px);
+    border-radius:50px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.logo{
+    color:#6C3BFF;
+    font-size:30px;
+    font-weight:700;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+    color:#FF3F8E;
+}
+
+/* ==========================
+   PAGE TITLE
+========================== */
+
+.page-title{
+    width:90%;
+    margin:70px auto 40px;
+    text-align:center;
+}
+
+.page-title h1{
+    font-size:55px;
+    color:#6C3BFF;
+    margin-bottom:15px;
+}
+
+.page-title p{
+    font-size:20px;
+    color:#666;
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:35px;
+    margin-bottom:35px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(108,59,255,.2);
+}
+
+.card h2{
+    color:#6C3BFF;
+    margin-bottom:20px;
+    border-left:6px solid #FF3F8E;
+    padding-left:15px;
+}
+
+.card h3{
+    color:#FF3F8E;
+    margin:20px 0 10px;
+}
+
+.card p{
+    font-size:17px;
+    line-height:30px;
+    color:#555;
+}
+
+.card ul{
+    margin-left:25px;
+    margin-top:15px;
+}
+
+.card ul li{
+    margin:12px 0;
+    line-height:28px;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+table th{
+    background:#6C3BFF;
+    color:white;
+    padding:15px;
+    font-size:18px;
+}
+
+table td{
+    background:white;
+    padding:15px;
+    text-align:center;
+    border:1px solid #eee;
+}
+
+/* ==========================
+   TEAM MEMBERS
+========================== */
+
+.team{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.member{
+    width:260px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.member:hover{
+    transform:translateY(-10px);
+}
+
+.member h3{
+    color:#6C3BFF;
+    margin-bottom:10px;
+}
+
+.member p{
+    color:#666;
+    line-height:26px;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a{
+    color:#6C3BFF;
+}
+
+a:hover{
+    color:#FF3F8E;
+}
+
+/* ==========================
+   SCREENSHOTS
+========================== */
+
+.screenshot-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+
+.shot{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.shot img{
+    width:100%;
+    border-radius:15px;
+}
+
+.shot h4{
+    margin-top:15px;
+    color:#6C3BFF;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#6C3BFF;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+footer p{
+    font-size:16px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.page-title h1{
+    font-size:42px;
+}
+
+.team{
+    flex-direction:column;
+    align-items:center;
+}
+
+.member{
+    width:90%;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
+
+@media(max-width:768px){
+
+.page-title h1{
+    font-size:35px;
+}
+
+.page-title p{
+    font-size:18px;
+}
+
+.card{
+    padding:25px;
+}
+
+.card h2{
+    font-size:26px;
+}
+
+.card p,
+.card li{
+    font-size:16px;
+}
+
+}
